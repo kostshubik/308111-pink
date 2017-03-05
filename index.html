@@ -2,11 +2,111 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="menu">
+        <a class="menu__logo" href="#"> <img src="http://placehold.it/75x25" alt="Pink"> </a>
+        <button type="button" class="menu__opener"> <img src="http://placehold.it/50x25" alt="Навигация"> </button>
+        <ul class="menu__list">
+          <li class="menu__item menu__item--active"><a class="menu__link" href="index.html">Главная</a></li>
+          <li class="menu__item"><a class="menu__link" href="photo.html">Фотографии</a></li>
+          <li class="menu__item"><a class="menu__link" href="form.html">Конкурс</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <div class="page-title">
+        <img class="page-title__photo" src="http://placehold.it/320x287" alt="фото">
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <section class="download ">
+      <button type="button" class="radius-button">Скачать приложение</button>
+      <a class="download__app download__app--ios" href="#"></a>
+      <a class="download__app download__app--android" href="#"></a>
+      <a class="download__app download__app--windows" href="#"></a>
+      <p class="download__avaliable">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
 
+    <section class="benefits">
+      <p class="benefits__header">Устали от серости мегаполиса?</p>
+      <p class="benefits__header">Нам есть, что вам предложить!</p>
+      <div class="benefits__content">
+        <p class="benefits__title">Поднимает настроение</p>
+        <p class="benefits__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <p class="benefits__title">Меняет мир вокруг</p>
+        <p class="benefits__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <p class="benefits__title">Заводит новых друзей</p>
+        <p class="benefits__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        <img src="http://placehold.it/157x325" alt="фото">
+      </div>
+    </section>
+
+    <section class="review">
+      <p class="review__name">Николай Петров</p>
+      <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+<!--
+      <div class="slider">
+        <input type="radio" id="position1" name="position" checked>
+        <input type="radio" id="position2" name="position">
+        <input type="radio" id="position3" name="position">
+        <div class="slider__controls">
+          <label for="position1"></label>
+          <label for="position2"></label>
+          <label for="position3"></label>
+        </div>
+      </div>
+-->
+    </section>
+
+    <section class="price">
+      <table>
+        <tr class="price-header">
+          <td>
+            <p class="price-header__title">Стандарт</p>
+            <p class="price-header__text">3,99 USD</p>
+          </td>
+        </tr>
+        <tr class="price__row">
+          <td>
+            <p class="price__column price__column--on">Розовый фильтр</p>
+          </td>
+        </tr>
+        <tr class="price__row">
+          <td>
+            <p class="price__column price__column--on">Смайлики</p>
+          </td>
+        </tr>
+        <tr class="price__row">
+          <td>
+            <p class="price__column price__column--off">Комментарии</p>
+          </td>
+        </tr>
+      </table>
+<!--
+      <div class="slider">
+        <input type="radio" id="position1" name="position">
+        <input type="radio" id="position2" name="position" checked>
+        <input type="radio" id="position3" name="position">
+        <div class="slider__controls">
+          <label for="position1"></label>
+          <label for="position2"></label>
+          <label for="position3"></label>
+        </div>
+      </div>
+-->
+    </section>
+
+    <section class="contacts">
+      <p class="title">Остались вопросы? Свяжитесь с нами!</p>
+      <p class="contacts__title">Звоните:</p>
+      <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      <p class="contacts__title">Пишите:</p>
+      <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <p class="contacts__title">Приезжайте в гости:</p>
+      <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+      <img src="http://placehold.it/320x200" alt="карта">
+    </section>
   </body>
 </html>
