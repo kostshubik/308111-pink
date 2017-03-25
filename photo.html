@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
-    <header class="main-header">
+    <!-- <header class="main-header">
       <nav class="menu">
         <a class="menu__logo" href="index.html"> <img src="http://placehold.it/75x25" alt="Pink"> </a>
         <button type="button" class="menu__opener"> <img src="http://placehold.it/50x25" alt="Навигация"> </button>
@@ -20,16 +20,16 @@
       <div class="page-title">
         <h1 class="page-title__text">Фотографии пользователей</h1>
       </div>
-    </header>
+    </header> -->
 
     <article class="user-photos">
-      <h2 class="offer">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+      <h2 class="offer__text  wrapper">Взгляните на фотографии, которые выкладывают пользователи! <br> Видите, как не хватает ваших?</h2>
       <section class="user-photo user-photo--of-the-day">
-        <div class="user-photo__image user-photo__image--of-the-day">
-          <img src="http://placehold.it/320x137" alt="Панорамая дня">
-          <div class="user-photo__title">Панорама дня</div>
+        <div class="user-photo__image user-photo__image--of-the-day ">
+          <img src="img/panorama-mobile@1x.jpg" width="100%" alt="Панорамая дня">
+          <div class="user-photo__title"></div>
         </div>
-        <div class="comment">
+        <div class="comment comment--of-the-day">
           <p class="comment__title">
             <span class="comment__name">Анна</span>
             <span class="comment__time">(5 минут назад)</span>
@@ -38,9 +38,9 @@
           <p class="comment__likes">Нравится: 215</p>
         </div>
       </section>
-      <section class="user-photo">
+      <section class="user-photo wrapper">
         <div class="user-photo__image">
-          <img src="http://placehold.it/280x180" alt="фото">
+          <img src="img/photo-1-mobile@1x.jpg" width="100%" alt="фото">
         </div>
         <div class="comment">
           <p class="comment__title">
@@ -51,9 +51,9 @@
           <p class="comment__likes">Нравится: 356</p>
         </div>
       </section>
-      <section class="user-photo">
+      <section class="user-photo wrapper">
         <div class="user-photo__image">
-          <img src="http://placehold.it/280x180" alt="фото">
+          <img src="img/photo-2-mobile@1x.jpg" width="100%" alt="фото">
         </div>
         <div class="comment">
           <p class="comment__title">
@@ -64,9 +64,9 @@
           <p class="comment__likes">Нравится: 666</p>
         </div>
       </section>
-      <section class="user-photo">
+      <section class="user-photo wrapper">
         <div class="user-photo__image">
-          <img src="http://placehold.it/280x180" alt="фото">
+          <img src="img/photo-3-mobile@1x.jpg" width="100%" alt="фото">
         </div>
         <div class="comment">
           <p class="comment__title">
@@ -77,9 +77,9 @@
           <p class="comment__likes">Нравится: 215</p>
         </div>
       </section>
-      <section class="user-photo">
+      <section class="user-photo wrapper">
         <div class="user-photo__image">
-          <img src="http://placehold.it/280x180" alt="фото">
+          <img src="img/photo-4-mobile@1x.jpg" width="100%" alt="фото">
         </div>
         <div class="comment">
           <p class="comment__title">
@@ -90,9 +90,9 @@
           <p class="comment__likes">Нравится: 4</p>
         </div>
       </section>
-      <section class="user-photo">
+      <section class="user-photo wrapper">
         <div class="user-photo__image">
-          <img src="http://placehold.it/280x180" alt="фото">
+          <img src="img/photo-5-mobile@1x.jpg" width="100%" alt="фото">
         </div>
         <div class="comment">
           <p class="comment__title">
@@ -103,9 +103,9 @@
           <p class="comment__likes">Нравится: 150</p>
         </div>
       </section>
-      <section class="user-photo">
+      <section class="user-photo wrapper">
         <div class="user-photo__image">
-          <img src="http://placehold.it/280x180" alt="фото">
+          <img src="img/photo-6-mobile@1x.jpg" width="100%" alt="фото">
         </div>
         <div class="comment">
           <p class="comment__title">
@@ -118,34 +118,36 @@
       </section>
       <section class="post-photo">
         <div class="offer">
-          <p class="offer__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="offer__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        <div class="post-photo__content">
-          <img src="http://placehold.it/280x374" alt="фото">
+        <div class="post-photo post-photo--gray wrapper">
+          <div class="post-photo__content">
+            <img src="img/photo-7-mobile@1x.jpg" width="100%" alt="фото">
+          </div>
+          <div class="post-photo__tools photo-tools">
+            <div class="photo-tools__resize photo-tools__resize--active"></div>
+            <div class="photo-tools__filling"></div>
+            <div class="photo-tools__contrast"></div>
+            <div class="photo-tools__range"></div>
+          </div>
+          <button class="radius-button radius-button--red wrapper" type="button">Запостить</button>
+          <button class="radius-button radius-button--gray wrapper" type="button">Отмена</button>
         </div>
-        <div class="post-photo__tools photo-tools">
-          <div class="photo-tools__resize photo-tools__resize--active"></div>
-          <div class="photo-tools__filling"></div>
-          <div class="photo-tools__contrast"></div>
-          <div class="photo-tools__range"></div>
-        </div>
-        <button class="radius-button radius-button--red" type="button">Запостить</button>
-        <button class="radius-button radius-button--gray" type="button">Отмена</button>
       </section>
     </article>
 
-    <footer class="main-footer">
-      <div class="footer-logo">
-        <img src="http://placehold.it/50x25" alt="Лого">
+    <!-- <footer class="main-footer wrapper">
+      <div class="footer-logo wrapper">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Лого">
       </div>
-      <div class="social-line">
+      <div class="social-line wrapper">
         <a class="social-button social-button--twitter" href="http://twitter.com"></a>
         <a class="social-button social-button--facebook" href="http://facebook.com"></a>
         <a class="social-button social-button--youtube" href="http://youtube.com"></a>
       </div>
-      <div class="copyright">
-        <a class="copyright__text" href="http://htmlacademy.ru">Разработано <img src="http://placehold.it/30x35" alt="HTML Academy"></a>
+      <div class="copyright wrapper">
+        <a class="copyright__text wrapper" href="http://htmlacademy.ru">Разработано <img src="img/logo-htmlacademy.svg" alt="HTML Academy"></a>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

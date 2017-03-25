@@ -1,17 +1,27 @@
 .radius-button {
-    font-family: @fonts;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    color: @white;
-
+  display:block;
+  font-family: @fonts;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @white;
 }
 
 .radius-button--red {
-    color: @pink;
-
+  background-color: transparent;
+  width: calc(100% - 40px);
+  height: 55px;
+  border: 3px solid @pink;
+  border-radius: 50px;
+  color: @pink;
+  margin-bottom: 12px;
 }
 
 .radius-button--gray {
-    color: @gray;
+  background-color: transparent;
+  width: 280px;
+  height: 55px;
+  border: 3px solid @darkgray;
+  border-radius: 50px;
+  color: @darkgray;
 }
