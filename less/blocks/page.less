@@ -1,3 +1,11 @@
 .page {
-    font-family: @fonts;
+  font-family: @fonts;
+  margin: 0;
+}
+
+@media @desktop-widths {
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

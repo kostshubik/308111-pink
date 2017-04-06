@@ -1,11 +1,36 @@
 .page-title {
-    background-color: @darkblue;
-    // width: 320px;
+  min-height: 170px;
 }
 
 .page-title__text {
-    font-size: 24px;
-    line-height: 29px;
+  padding-top: 14px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: @white;
+}
+
+@media @tablet-widths {
+  .page-title__text {
+    width: 357px;
+    font-size: 50px;
+    line-height: 60px;
     font-weight: 300;
-    color: @white;
+    margin: 0 auto;
+    margin-bottom: 141px;
+    padding-top: 67px;
+  }
+}
+
+@media @desktop-widths {
+  .page-title__text {
+    width: 357px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding-top: 63px;
+  }
 }

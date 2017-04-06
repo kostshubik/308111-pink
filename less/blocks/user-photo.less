@@ -1,28 +1,20 @@
 .user-photo {
-  // width: 320px;
-
 }
 
 .user-photo__image {
-  // width: 280px;
-  // padding-left: 20px;
-  // padding-right: 20px;
   margin-bottom: 10px;
-  // text-align: center;
+}
+
+.user-photo__image--margin {
+  margin-bottom: 12px;
 }
 
 .user-photo__container {
-  // width: 100%;
-  // padding-left: 20px;
-  // padding-right: 20px;
-
 }
 
 .user-photo__image--of-the-day {
   position: relative;
-  // width: 320px;
-  // padding: 0px;
-  margin-top: 49px;
+  margin-top: 48px;
 }
 
 .user-photo__image--of-the-day::after {
@@ -45,4 +37,58 @@
   height: 36px;
   top: 0px;
   left: 160px;
+}
+
+@media @tablet-widths {
+  .user-photo {
+    width: 300px;
+    margin-bottom: 2px;
+  }
+
+  .user-photo__image {
+    height: 303px; //временно
+  }
+
+  .user-photo__image--of-the-day::before {
+    top: 57px;
+    left: 520px;
+  }
+
+  .user-photo__image--of-the-day::after {
+    top: 63px;
+    left: 538px;
+  }
+
+  .user-photo__image--of-the-day {
+    height: 509px; //временно
+    width: 700px;
+    margin-bottom: 0px;
+  }
+}
+
+@media @desktop-widths {
+  .user-photo__image--of-the-day::before {
+    top: 54px;
+    left: 930px;
+  }
+
+  .user-photo__image--of-the-day::after {
+    top: 60px;
+    left: 949px;
+  }
+
+  .user-photo {
+    width: 300px;
+    margin-bottom: 35px;
+  }
+
+  .user-photo__image {
+    height: 404px; //временно
+  }
+
+  .user-photo__image--of-the-day {
+    width: 1200px;
+    height: 506px;
+    margin-bottom: 0px;
+  }
 }

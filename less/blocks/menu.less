@@ -1,31 +1,257 @@
 .menu {
+  position: relative;
+  min-height: 66px;
+  margin: 0 auto;
+  background-color: @darkblue;
 
 }
 
 .menu__logo {
-
+  position: relative;
+  min-height: 67px;
+  background-color: rgba(40, 54, 69, 0.3);
 }
 
-.menu__opener {
+.menu__logo-link {
+  width: 75px;
+  height: 22px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.menu__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.menu--closed .menu__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -2px;
+  width: 50px;
+  height: 4px;
+  background-color: @white;
+  box-shadow: 0 10px 0 0 @white,
+              0 20px 0 0 @white;
+  &:hover {
+  background-color: @pink;
+  }
+  &:active {
+  background-color: @pinktrans;
+  }
+}
+
+// .menu--closed .menu__toggle:active::before {
+//   background-color: rgba(255, 255, 255, 0.3);
+//   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3),
+//               0 16px 0 0 rgba(255, 255, 255, 0.3);
+// }
+
+.menu--opened .menu__toggle {
+  top: 0px;
+  right: -4px;
+  &::before,
+  &::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 18px;
+  width: 30px;
+  height: 4px;
+  background-color: @white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  // &:active::before,
+  // &:active::after {
+  //   background-color: rgba(255, 255, 255, 0.3);
+  // }
 }
 
 .menu__list {
-
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.menu__item {
-
+.menu__item a {
+  display: block;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: @white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 1px solid rgba(72, 84, 97, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.menu__link {
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 700;
-    color: @white;
-    text-transform: uppercase;
-}
+// .main-nav__item a[href] {
+//   &:hover {
+//     background-color: #755a46;
+//     border-top-color: #755a46;
+//   }
+//
+//   &:active {
+//     color: rgba(255, 255, 255, 0.3);
+//
+//     background-color: #6a4d38;
+//     border-top-color: #6a4d38;
+//   }
+// }
 
 .menu__item--active {
 
+}
+
+@media @mobile-widths-only {
+  .menu--closed .menu__item {
+    display: none;
+  }
+
+  .menu--nojs .menu__toggle {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .menu--closed .menu__item {
+    display: none;
+  }
+
+  .menu--nojs .menu__toggle {
+    display: none;
+  }
+
+  .menu__logo {
+    position: relative;
+    min-height: 111px;
+  }
+
+  .menu__logo-link {
+    width: 150px;
+    height: 43px;
+    position: absolute;
+    left: 38px;
+    top: 26px;
+    background-image: url("../img/logo-pink-blue-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: @white;
+  }
+
+  .menu--closed .menu__toggle::before {
+    left: -22px;
+    top: 43px;
+  }
+
+  .menu--opened .menu__toggle {
+    top: 28px;
+    right: 16px;
+  }
+}
+
+@media @desktop-widths {
+  .menu__list {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 410px;
+    padding-right: 90px;
+    padding-top: 31px;
+  }
+
+  // .menu-item a {
+  //   display: inline;
+  //   font-size: 30px;
+  // }
+
+  .menu--closed .menu__item {
+    display: none;
+  }
+
+  .menu--nojs .menu__toggle {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: relative;
+    background-color: rgba(40, 54, 69, 0.7);
+    padding-bottom: 31px;
+  }
+
+  .menu::after {
+    content: "";
+    width: 150px;
+    height: 43px;
+    position: absolute;
+    left: 128px;
+    top: 25px;
+    background-image: url("../img/logo-pink-blue-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: @white;
+    z-index: 9;
+  }
+
+  .menu__logo {
+    display: none;
+  }
+
+  .menu__logo-link {
+    width: 150px;
+    height: 43px;
+    position: absolute;
+    left: 38px;
+    top: 26px;
+    background-image: url("../img/logo-pink-blue-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: @white;
+    z-index: 9;
+  }
+
+  .menu--closed .menu__toggle::before {
+    display: none;
+  }
+
+  .menu--opened .menu__toggle {
+    display: none;
+  }
+
+  .menu__item a {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+    border-top: none;
+    border-bottom: none;
+
+  }
 }
