@@ -17,7 +17,7 @@
   height: 22px;
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 22px;
   background-image: url("../img/logo-pink-white-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -60,7 +60,7 @@
 // }
 
 .menu--opened .menu__toggle {
-  top: 0px;
+  top: 4px;
   right: -4px;
   &::before,
   &::after {
@@ -97,8 +97,8 @@
 .menu__item a {
   display: block;
   text-align: center;
-  padding-top: 14px;
-  padding-bottom: 16px;
+  padding-top: 17px;
+  padding-bottom: 13px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
@@ -138,6 +138,11 @@
 }
 
 @media @tablet-widths {
+  .menu__item a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   .menu--closed .menu__item {
     display: none;
   }

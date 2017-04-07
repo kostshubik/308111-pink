@@ -4,12 +4,20 @@
   margin-bottom: 19px;
 }
 
-.comment__title {
+.comment--of-the-day .comment__title {
+  padding-bottom: 6px;
+  padding-top: 0px;
 }
 
 .comment--of-the-day {
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 21px;
+}
+
+.comment__title {
+  padding-top: 20px;
+  padding-bottom: 6px;
 }
 
 .comment__name {
@@ -48,6 +56,7 @@
   color: @pink;
   text-transform: uppercase;
   padding-left: 49px;
+  padding-top: 12px;
   margin-bottom: 21px;
 }
 
@@ -57,22 +66,24 @@
   background: url(../img/icon-heart.svg) no-repeat;
   width: 13px;
   height: 12px;
-  top: 5px;
-  left: 19px;
+  top: 18px;
+  left: 18px;
 }
 
 @media @tablet-widths {
   .comment {
+    margin-top: -14px;
   }
 
   .comment__title {
     padding-left: 11px;
-    padding-top: 7px;
+    padding-top: 25px;
   }
 
   .comment__text {
-    width: 250px;
+    width: 260px;
     padding-left: 28px;
+    padding-bottom: 11px;
   }
 
   .comment__likes {
@@ -106,7 +117,7 @@
 
   .comment--of-the-day .comment__title {
     margin: 0;
-    margin-top: 24px;
+    margin-top: 3px;
     padding-left: 0px;
     padding-top: 0px;
 
@@ -125,35 +136,36 @@
   .comment--of-the-day .comment__text{
     order: 3;
     padding-left: 28px;
-    padding-top: 16px;
+    padding-top: 10px;
+    padding-bottom: 0px;
     width: auto;
   }
 
   .comment--of-the-day .comment__likes{
     order: 2;
     padding-left: 305px;
-    padding-top: 13px;
+    padding-top: 4px;
     margin-bottom: 0;
   }
 
   .comment--of-the-day .comment__likes::before {
-    top: 17px;
-    left: 412px;
+    top: 9px;
+    left: 413px;
   }
 }
 
 @media @desktop-widths {
   .comment {
-    height: 154px;
+    margin-top: -13px;
   }
 
   .comment__title {
     padding-left: 11px;
-    padding-top: 7px;
+    padding-top: 23px;
   }
 
   .comment__text {
-    width: 250px;
+    width: 260px;
     padding-left: 28px;
   }
 
@@ -180,7 +192,7 @@
     flex-wrap: wrap;
     width: 940px;
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 74px;
     margin-bottom: 50px;
     margin-left: 130px;
     margin-right: 0;
@@ -189,7 +201,7 @@
 
   .comment--of-the-day .comment__title {
     margin: 0;
-    margin-top: 24px;
+    margin-top: 3px;
     padding-left: 0px;
     padding-top: 0px;
 
@@ -208,19 +220,19 @@
   .comment--of-the-day .comment__text{
     order: 3;
     padding-left: 28px;
-    padding-top: 16px;
+    padding-top: 10px;
     width: auto;
   }
 
   .comment--of-the-day .comment__likes{
     order: 2;
     padding-left: 623px;
-    padding-top: 13px;
+    padding-top: 4px;
     margin-bottom: 0;
   }
 
   .comment--of-the-day .comment__likes::before {
-    top: 17px;
+    top: 9px;
     left: 730px;
   }
 }
